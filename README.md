@@ -1,27 +1,17 @@
 # ember-ramdisk
 
-This README outlines the details of collaborating on this Ember addon.
+Work in progress
 
-## Installation
+## Getting Started
 
-* `git clone <repository-url>` this repository
-* `cd ember-ramdisk`
-* `npm install`
-* `bower install`
+Install [imDisk](http://www.ltr-data.se/opencode.html/#ImDisk).
 
-## Running
+Install in ember-cli application.
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+```
+ember install ember-ramdisk
+```
 
-## Running Tests
+## How it work
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+When you start `ember server`, ember-ramdisk will create the virtual driver `X:` and symlink `tmp` -> `X:/tmp` 
